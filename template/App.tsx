@@ -9,14 +9,7 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import {SafeAreaView, Text, StatusBar} from 'react-native';
 
 import {
   Header,
@@ -25,6 +18,7 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import styled from 'styled-components/native';
 
 declare const global: {HermesInternal: null | {}};
 
@@ -33,86 +27,88 @@ const App = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
+        <ScrollView contentInsetAdjustmentBehavior="automatic">
           <Header />
           {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
+            <EngineView>
+              <Footer>Engine: Hermes</Footer>
+            </EngineView>
           )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
+          <Body>
+            <SectionContainer>
+              <Title>Step One</Title>
+              <Description>
+                Edit <Text style={{fontWeight: '700'}}>App.tsx</Text> to change
+                this screen and then come back to see your edits.
+              </Description>
+            </SectionContainer>
+
+            <SectionContainer>
+              <Title>See Your Changes</Title>
+              <Description>
                 <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
+              </Description>
+            </SectionContainer>
+
+            <SectionContainer>
+              <Title>Debug</Title>
+              <Description>
                 <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
+              </Description>
+            </SectionContainer>
+
+            <SectionContainer>
+              <Title>Learn More</Title>
+              <Description>
                 Read the docs to discover what to do next:
-              </Text>
-            </View>
+              </Description>
+            </SectionContainer>
             <LearnMoreLinks />
-          </View>
+          </Body>
         </ScrollView>
       </SafeAreaView>
     </>
   );
 };
 
-const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
-  },
-  engine: {
-    position: 'absolute',
-    right: 0,
-  },
-  body: {
-    backgroundColor: Colors.white,
-  },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
-  },
-});
+const ScrollView = styled.ScrollView`
+  background-color: ${Colors.lighter};
+`;
+
+const EngineView = styled.View`
+  position: absolute;
+  right: 0;
+`;
+
+const Body = styled.View`
+  background-color: ${Colors.white};
+`;
+
+const Footer = styled.Text`
+  color: ${Colors.dark};
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px;
+  padding-right: 12px;
+  text-align: right;
+`;
+
+const SectionContainer = styled.View`
+  margin-top: 32px;
+  padding: 0 24px;
+`;
+
+const Title = styled.Text`
+  font-size: 24px;
+  font-weight: 600;
+  color: ${Colors.black};
+`;
+
+const Description = styled.Text`
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  color: ${Colors.dark};
+`;
 
 export default App;
