@@ -1,16 +1,28 @@
-# React Native My Template
+<h1 align="center">React Native Template</h1>
 
-My Template for React Native
+<p align="center">
+  <a href="https://reactnative.dev/"><img src="https://user-images.githubusercontent.com/16918590/93020342-69ec5c80-f617-11ea-8b1a-d39b1f43ffde.png" width="160px;" /></a>
+  <br>
+  <a href="https://www.typescriptlang.org/"><img src="https://user-images.githubusercontent.com/16918590/93020370-9607dd80-f617-11ea-87ec-e43bcbd60db0.png" height="45px;" /></a>
+  <!-- <a href="https://styled-components.com/"><img src="https://user-images.githubusercontent.com/16918590/93020424-ea12c200-f617-11ea-879f-b6257e5d66b2.png" height="45px;" /></a>
+  <a href=""><img src="https://user-images.githubusercontent.com/16918590/93020520-7f15bb00-f618-11ea-8b62-9e300e5f4e3f.png" height="45px;" /></a> -->
+  <!-- <a href=""><img src="http://~.png" height="45px;" /></a> -->
+</p>
 
-## Usage
+<p style="text-align: center">
+This template is a react-native boilerplate project template to start with for new projects.
+</p>
 
-```sh
-yarn
+## 📦 Features
+
+* [x] **Typescript ready:** This template based on the typescript template [here](https://github.com/react-native-community/react-native-template-typescript)
+* [x]  **React Navigation ready:** Includes [react navigation](https://reactnavigation.org/) with basic working functionality out-of-the-box to work with.
+* [x]  **Lint ready:** ESlint.
+
+## 💬 Usage
+
+```bash
+npx react-native init {PROJECT_NAME} --template https://github.com/sskmy1024y/ReactNative-Typescript-template.git
 ```
 
-## How to init this template
-
-```sh
-expo init ReactNativeTemplate
-# app name: Template App
-```
+## ⏱ Changelog:
