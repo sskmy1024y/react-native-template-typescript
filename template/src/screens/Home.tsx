@@ -8,7 +8,7 @@ function Home() {
   const navigation = useNavigation();
 
   const onPress = () => {
-    navigation.navigate('Detail', {});
+    navigation.navigate('detail', {});
   };
 
   return (
