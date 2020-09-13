@@ -1,4 +1,4 @@
-<h1 align="center">React Native Template</h1>
+<h1 align="center">React Native Template Typescript</h1>
 
 <p align="center">
   <a href="https://reactnative.dev/"><img src="https://user-images.githubusercontent.com/16918590/93020342-69ec5c80-f617-11ea-8b1a-d39b1f43ffde.png" width="160px;" /></a>
@@ -22,7 +22,7 @@ This template is a react-native boilerplate project template to start with for n
 ## 💬 Usage
 
 ```bash
-npx react-native init {PROJECT_NAME} --template https://github.com/sskmy1024y/ReactNative-Typescript-template.git
+npx react-native init {PROJECT_NAME} --template https://github.com/sskmy1024y/react-native-template-typescript.git
 ```
 
 ## ⏱ Changelog:

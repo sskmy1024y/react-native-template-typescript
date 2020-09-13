@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sskmy1024y/ReactNative-Typescript-template.git"
+    "url": "git+https://github.com/sskmy1024y/react-native-template-typescript.git"
   },
   "keywords": [
     "react-native",
@@ -25,7 +25,7 @@
   "author": "sskmy1024y <sskmy1024.y@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sskmy1024y/ReactNative-Typescript-template/issues"
+    "url": "https://github.com/sskmy1024y/react-native-template-typescript/issues"
   },
-  "homepage": "https://github.com/sskmy1024y/ReactNative-Typescript-template#readme"
+  "homepage": "https://github.com/sskmy1024y/react-native-template-typescript#readme"
 }
