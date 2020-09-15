@@ -1,6 +1,7 @@
 import React from 'react';
 
-import {Text, Button} from 'react-native';
+import {Button} from 'react-native';
+import {Text} from 'components/common';
 import styled from 'styled-components/native';
 import {useNavigation} from '@react-navigation/native';
 

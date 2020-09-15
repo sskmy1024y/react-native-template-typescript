@@ -1,3 +1,4 @@
+import {Text} from 'components/common';
 import {useDispatch} from 'hooks/hooks';
 import React from 'react';
 import {Button} from 'react-native';
@@ -32,7 +33,7 @@ const Container = styled.View`
   align-items: center;
 `;
 
-const Count = styled.Text`
+const Count = styled(Text)`
   font-size: 20px;
   font-weight: bold;
 `;

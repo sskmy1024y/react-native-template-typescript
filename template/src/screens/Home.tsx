@@ -1,13 +1,13 @@
 import React from 'react';
 
-import {Text, Button} from 'react-native';
+import {Button} from 'react-native';
 import styled from 'styled-components/native';
 import {useNavigation} from 'hooks/useNavigation';
 import CounterBox from 'components/CounterBox';
+import {Text} from 'components/common';
 
 function Home() {
   const navigation = useNavigation();
-
   const onPress = () => {
     navigation.navigate('detail', {});
   };
