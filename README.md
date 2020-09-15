@@ -28,3 +28,7 @@ npx react-native init {PROJECT_NAME} --template https://github.com/sskmy1024y/re
 ```
 
 ## ⏱ Changelog:
+
+#### v1.0.0 (2020/09/15)
+
+* Added basic packages and built an easy-to-use template
