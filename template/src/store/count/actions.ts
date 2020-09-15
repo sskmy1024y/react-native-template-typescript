@@ -5,6 +5,7 @@ export enum ActionNames {
   DECREMENT = 'DECREMENT',
 }
 
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface SetCountActionPayload {}
 
 export type SetIncrementAction = TypedAction<
