@@ -3,6 +3,7 @@ import React from 'react';
 import {Text, Button} from 'react-native';
 import styled from 'styled-components/native';
 import {useNavigation} from 'hooks/useNavigation';
+import CounterBox from 'components/CounterBox';
 
 function Home() {
   const navigation = useNavigation();
@@ -14,6 +15,7 @@ function Home() {
   return (
     <Container>
       <Text>Home</Text>
+      <CounterBox />
       <Button title={'Go To Detail'} onPress={onPress} />
     </Container>
   );
