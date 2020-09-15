@@ -5,7 +5,8 @@
   <br>
   <a href="https://www.typescriptlang.org/"><img src="https://user-images.githubusercontent.com/16918590/93020370-9607dd80-f617-11ea-87ec-e43bcbd60db0.png" height="45px;" /></a>
   <a href="https://styled-components.com/"><img src="https://user-images.githubusercontent.com/16918590/93020424-ea12c200-f617-11ea-879f-b6257e5d66b2.png" height="45px;" /></a>
-  <!-- <a href=""><img src="https://user-images.githubusercontent.com/16918590/93020520-7f15bb00-f618-11ea-8b62-9e300e5f4e3f.png" height="45px;" /></a> -->
+  <a href="https://redux.js.org/"><img src="https://user-images.githubusercontent.com/16918590/93162614-15003180-f750-11ea-8fa0-1ef894aa5fb2.png" height="45px;" /></a>
+  <a href="https://reactnavigation.org/"><img src="https://user-images.githubusercontent.com/16918590/93020520-7f15bb00-f618-11ea-8b62-9e300e5f4e3f.png" height="45px;" /></a>
   <!-- <a href=""><img src="http://~.png" height="45px;" /></a> -->
 </p>
 
@@ -16,6 +17,7 @@ This template is a react-native boilerplate project template to start with for n
 ## 📦 Features
 
 * [x] **Typescript ready:** This template based on the typescript template [here](https://github.com/react-native-community/react-native-template-typescript)
+* [x] **Redux ready:** Includes redux for state management. Design pattern uses re-ducks.
 * [x]  **React Navigation ready:** Includes [react navigation](https://reactnavigation.org/) with basic working functionality out-of-the-box to work with.
 * [x]  **Lint ready:** ESlint.
 
