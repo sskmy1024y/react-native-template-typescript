@@ -1,34 +1,31 @@
 {
-  "main": "node_modules/expo/AppEntry.js",
+  "name": "react-native-template-typescript",
+  "version": "1.0.0",
+  "description": "Clean and minimalist React Native template for a quick start with TypeScript.",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "eject": "expo eject"
+    "prepublishOnly": "npm --no-git-tag-version version $TRAVIS_TAG"
   },
-  "dependencies": {
-    "expo": "~36.0.0",
-    "react": "~16.9.0",
-    "react-dom": "~16.9.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
-    "react-native-screens": "2.0.0-alpha.12",
-    "react-native-web": "~0.11.7"
+  "files": [
+    "template",
+    "template.config.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sskmy1024y/react-native-template-typescript.git"
   },
-  "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@types/react": "~16.9.0",
-    "@types/react-native": "~0.60.23",
-    "@typescript-eslint/eslint-plugin": "^2.12.0",
-    "@typescript-eslint/parser": "^2.12.0",
-    "babel-preset-expo": "~8.0.0",
-    "eslint": "^6.7.2",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.17.0",
-    "eslint-plugin-react-native": "^3.8.1",
-    "prettier": "^1.19.1",
-    "typescript": "^3.7.3"
+  "keywords": [
+    "react-native",
+    "typescript",
+    "jest",
+    "boilerplate",
+    "navigation",
+    "template",
+    "boilerplate"
+  ],
+  "author": "sskmy1024y <sskmy1024.y@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sskmy1024y/react-native-template-typescript/issues"
   },
-  "private": true
+  "homepage": "https://github.com/sskmy1024y/react-native-template-typescript#readme"
 }
